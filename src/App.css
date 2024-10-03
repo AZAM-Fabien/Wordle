@@ -130,9 +130,13 @@
   flex-direction: column;
   justify-content: space-evenly;
   height: auto;
-  width: fit-content;
+  width: 60%;
   background-color: rgb(152, 152, 152);
   border-radius: 1rem;
+
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 }
 
 .row {
@@ -142,16 +146,29 @@
 }
 
 .key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 5vw;
+  height: 5vw;
   cursor: pointer;
-  padding: 20px ;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 3px;
 
   @media (max-width: 700px) {
-    padding: 2.5vw
+    flex: 0 1 10vw;
+    height: 10vw;    
   }
-
 }
+
+.backspace {
+  padding: 0 5px;
+}
+
+.enter {
+  padding: 0 5px;
+}
+
 
 .key:active {
   background: rgb(44, 44, 44);
