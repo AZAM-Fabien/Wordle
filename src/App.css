@@ -1,7 +1,7 @@
 .title{
   text-align: center;
   color: rgb(0, 0, 0);
-  margin: 40px 0;
+  margin: 15px 0;
   font-size: 36px; 
 }
 
@@ -52,7 +52,7 @@
 }
 
 .background {
-  position: fixed;
+  position: relative;
   left: 50%;
   transform: translate(-50%, 0%);
   width: min(100%, 500px);
@@ -62,11 +62,17 @@
 .message {
   text-align: center;
   color: rgb(0, 0, 0);
-  margin-bottom: 20px;
   font-size: 1.5em;
 }
 
+.buttonMots {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .board {
+  margin-top : 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,4 +115,49 @@
 .absent {
   background-color: grey;
   color: white;
+}
+
+.keyboard {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  margin-top: 80px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 20vh;
+  width: max(60vw, 630px);
+  background-color: rgb(152, 152, 152);
+  border-radius: 1rem;
+
+  @media (max-width: 700px) {
+    width: 95vw;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.key {
+  cursor: pointer;
+  padding: 20px ;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 3px;
+
+  @media (max-width: 700px) {
+    padding: 2.5vw
+  }
+
+}
+
+.key:active {
+  background: rgb(44, 44, 44);
+}
+
+.active {
+  background-color: rgb(44, 44, 44);
 }
