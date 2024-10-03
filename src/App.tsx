@@ -86,7 +86,7 @@ function LetterBoxes() {
         ) : (
           <div className="message buttonMots" onClick={handleClick}>
             {" "}
-            révéler le mot ? clickez ici{" "}
+            révéler le mot ? cliquez ici{" "}
           </div>
         )}
         <Game

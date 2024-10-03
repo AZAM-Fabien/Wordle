@@ -43,8 +43,8 @@ interface VirtualKeyboardProps {
           <div className="key" onClick={() => handleKeyPress('V')}>V</div>
           <div className="key" onClick={() => handleKeyPress('B')}>B</div>
           <div className="key" onClick={() => handleKeyPress('N')}>N</div>
-          <div className="key enter" onClick={() => handleKeyPress('Enter')}>Enter</div>
           <div className="key backspace" onClick={() => handleKeyPress('Backspace')}>Backspace</div>
+          <div className="key enter" onClick={() => handleKeyPress('Enter')}>Enter</div>
 
         </div>
       </div>

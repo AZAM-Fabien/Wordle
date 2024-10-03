@@ -12,7 +12,7 @@
     left: 50%;
     transform: translate(-50%, 0%);
     width: 50%; 
-    height: 15%; 
+    height: auto; 
     margin: auto;
     padding: 20px;
     border: none;
@@ -20,6 +20,10 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     font-size: 18px;
     text-align: center;
+
+     @media (max-width: 768px) {
+      width: 80%;
+     }
 }
 .open-button {
   position: relative;
