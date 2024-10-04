@@ -130,7 +130,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   height: auto;
-  width: 60%;
+  width: min(800px,60%);
   background-color: rgb(152, 152, 152);
   border-radius: 1rem;
 
